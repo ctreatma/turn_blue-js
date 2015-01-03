@@ -1,0 +1,80 @@
+body {
+  font-family: Verdana, Helvetica, sans-serif;
+}
+
+#boardWrapper {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  height: 460px;
+  width: 460px;
+  background-color: #FFFFA0;
+}
+
+#infoWrapper {
+  position: absolute;
+  top : 20px;
+  left: 490px;
+  width: 400px;
+}
+
+#board fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.boardSize {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  height: 400px;
+  width: 400px;
+}
+
+.square {
+  float: left;
+  height: 50px;
+  width: 50px;
+  border: 1px solid #BBB;
+}
+
+.square.blue {
+  background-color: #00F;
+}
+
+.square.red {
+  background-color: #F00;
+}
+
+#boardLoading {
+  height: 200px;
+  padding-top: 200px;
+  color: #BBB;
+  background-color: #000; 
+  font-weight: bold;
+  text-align: center;
+}
+
+#levelDisplay {
+  position: absolute;
+  left: 20px;
+  top: 5px;
+}
+
+#clickDisplay {
+  position: absolute;
+  right: 20px;
+  top: 5px;
+}
+
+#currentLevel, #clickCounter {
+  font-weight: bold;
+}
+
+#newGame {
+  position: absolute;
+  right: 200px;
+  top: 5px;
+  margin-left: 150px;
+}

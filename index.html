@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+  <head>
+    <title>TurnBlue JS</title>
+    <link rel="stylesheet" type="text/css" href="turnblue.css" />
+    <script type="text/javascript" src="turnblue.js"></script>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+  </head>
+  <body>
+    <div id="infoWrapper">
+      <h3>TurnBlue by Charles Treatman</h3>
+      <p>The goal of this game is to turn the entire board blue.
+	Clicking on a square causes it to change color.  But be careful!
+	Adjacent squares will also change color.</p>
+      <p>On each level, the minimum number of clicks required to turn
+      all squares blue is the same as the level number.  If you click
+      too many times in a level, your game is over!</p>
+    </div>
+    <div id="boardWrapper">
+      <div id="levelDisplay">Level:&nbsp;<span id="currentLevel"></span></div>
+      <div id="clickDisplay">Clicks:&nbsp;<span id="clickCounter"></span></div>
+      <span id="boardLoading" class="boardSize">You must enable
+      javascript to play this game!</span>
+      <form id="board" class="boardSize" action="">
+         <fieldset>
+           <!-- Row 1 -->
+           <input class="square" type="button" />
+           <input class="square" type="button" />
+           <input class="square" type="button" />
+           <input class="square" type="button" />
+           <input class="square" type="button" />
+           <input class="square" type="button" />
+           <input class="square" type="button" />
+           <input class="square" type="button" />
+           <!-- Row 2 -->
+           <input class="square" type="button" />
+           <input class="square" type="button" />
+           <input class="square" type="button" />
+           <input class="square" type="button" />
+           <input class="square" type="button" />
+           <input class="square" type="button" />
+           <input class="square" type="button" />
+           <input class="square" type="button" />
+           <!-- Row 3 -->
+           <input class="square" type="button" />
+           <input class="square" type="button" />
+           <input class="square" type="button" />
+           <input class="square" type="button" />
+           <input class="square" type="button" />
+           <input class="square" type="button" />
+           <input class="square" type="button" />
+           <input class="square" type="button" />
+           <!-- Row 4 -->
+           <input class="square" type="button" />
+           <input class="square" type="button" />
+           <input class="square" type="button" />
+           <input class="square" type="button" />
+           <input class="square" type="button" />
+           <input class="square" type="button" />
+           <input class="square" type="button" />
+           <input class="square" type="button" />
+           <!-- Row 5 -->
+           <input class="square" type="button" />
+           <input class="square" type="button" />
+           <input class="square" type="button" />
+           <input class="square" type="button" />
+           <input class="square" type="button" />
+           <input class="square" type="button" />
+           <input class="square" type="button" />
+           <input class="square" type="button" />
+           <!-- Row 6 -->
+           <input class="square" type="button" />
+           <input class="square" type="button" />
+           <input class="square" type="button" />
+           <input class="square" type="button" />
+           <input class="square" type="button" />
+           <input class="square" type="button" />
+           <input class="square" type="button" />
+           <input class="square" type="button" />
+           <!-- Row 7 -->
+           <input class="square" type="button" />
+           <input class="square" type="button" />
+           <input class="square" type="button" />
+           <input class="square" type="button" />
+           <input class="square" type="button" />
+           <input class="square" type="button" />
+           <input class="square" type="button" />
+           <input class="square" type="button" />
+           <!-- Row 8 -->
+           <input class="square" type="button" />
+           <input class="square" type="button" />
+           <input class="square" type="button" />
+           <input class="square" type="button" />
+           <input class="square" type="button" />
+           <input class="square" type="button" />
+           <input class="square" type="button" />
+           <input class="square" type="button" />
+	 </fieldset>
+      </form>
+      <div>
+	<input id="newGame" type="button" value="New Game"
+	onclick="startNewGame();"/>
+      </div>
+      <script type="text/javascript">
+        startNewGame();
+      </script>
+    </div>
+  </body>
+</html>
